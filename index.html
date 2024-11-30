@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con Tráfico - Google Maps</title>
+    <style>
+        /* Estilo para el mapa */
+        #map {
+            height: 80vh;
+            width: 75%;
+        }
+    </style>
+    <!-- Cargar la API de Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=
+        ******************
+        &libraries=traffic"></script>
+</head>
+
+<body>
+    <h1>Mapa de Tráfico</h1>
+    <!-- Contenedor para el mapa -->
+    <div id="map"></div>
+    <div id="hud"
+        style="top: 10px; left: 10px; background: rgba(255, 255, 255, 0.8); padding: 5px; border-radius: 4px; font-size: 14px; z-index: 1;">
+        Latitud: <span id="lat"></span>, Longitud: <span id="lng"></span>
+    </div>
+
+    <!-- Referenciar el archivo compilado de TypeScript a JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
